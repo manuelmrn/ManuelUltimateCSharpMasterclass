@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using TodoList.Application.Classes;
+
+namespace TodoList
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			var app = new TodoApplication();
+
+			app.Run();
+		}
+	}
+}
