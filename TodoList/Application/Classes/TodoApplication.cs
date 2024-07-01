@@ -43,10 +43,10 @@ namespace TodoList.Application.Classes
 					AddTodo();
 					break;
 				case MenuOption.EditTodo:
-					// EditTodo();
+					//TODO: EditTodo();
 					break;
 				case MenuOption.DeleteTodo:
-					// DeleteTodo();
+					//TODO: DeleteTodo();
 					break;
 				case MenuOption.ClearScreen:
 					ConsoleUi.ClearScreen();

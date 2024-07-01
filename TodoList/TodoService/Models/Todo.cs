@@ -5,8 +5,9 @@ namespace TodoList.TodoService.Models
 {
 	public class Todo
 	{
-		private int _id;
+		private readonly int _id;
 		private readonly DateTime _createdAt;
+
 		private string _title;
 		private string _description;
 		private TodoStatus _status;
@@ -37,14 +38,6 @@ namespace TodoList.TodoService.Models
 			_dueDate = dueDate;
 			_createdAt = DateTime.Now;
 			_updatedAt = DateTime.MinValue;
-		}
-
-		public void UpdateId(int id)
-		{
-			if (id < 0)
-				throw new ArgumentOutOfRangeException(nameof(id), $"The '{nameof(id)}' cannot be less than 0.");
-
-			_id = id;
 		}
 
 		public void UpdateTitle(string title)
